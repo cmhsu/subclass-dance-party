@@ -75,7 +75,7 @@ $(document).ready(function(){
     var allNodes = $('.corgi, .shiba, .pug');
     var leftPosition = 50;
     var width = $('body').width()-200;
-    var height = screen.height-300;
+    var height = screen.height*.6;
     var spaceBetweenEach = width / allNodes.length;
 
     allNodes.stop(true);
