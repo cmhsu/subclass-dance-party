@@ -19,7 +19,10 @@ makeCorgiDancer.prototype.rotate = function() {
   // this.$node.flip({
   //   trigger: 'manual'
   // });
-  this.$node.flip();
+this.$node.flip({
+  trigger: 'hover'
+});
+  // this.$node.flip();
 };
 
 makeCorgiDancer.prototype.constructor = makeCorgiDancer;

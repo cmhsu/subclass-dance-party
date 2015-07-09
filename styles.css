@@ -27,20 +27,27 @@ body, a:link, a:visited, a:active{
   right: 0;
 }
 
-.button:hover {
+.addDancerButton, .lineup, .disperse:hover {
   background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
   background-color: #f6f6f6;
 }
 
-.button:focus {
+.addDancerButton, .lineup, .disperse:focus {
   outline: 0;
   box-shadow: none;
 }
 
-.title, .addDancerButton, .lineup, .disperse{
-  padding:5px 12px;
+.title{
+  padding:5px 5px;
   float:right;
 }
+
+.addDancerButton, .lineup, .disperse{
+  padding:5px 12px;
+  margin: 5px;
+  float:right;
+}
+
 .topbar{
   height: 40px;
   background-color: #555;
