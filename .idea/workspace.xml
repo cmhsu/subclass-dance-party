@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d785d70e-6bc4-4c2b-a3fd-dbb4ff001750" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/corgi_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/corgi_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/corgiswim_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/corgiswim_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pug.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pug_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pug_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/shiba.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/shiba_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/shiba_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/corgi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/shiba.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/giphy.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/background.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dancefloor.html" afterPath="$PROJECT_DIR$/dancefloor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/init.js" afterPath="$PROJECT_DIR$/src/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shia.js" afterPath="$PROJECT_DIR$/src/shia.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles.css" afterPath="$PROJECT_DIR$/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="d785d70e-6bc4-4c2b-a3fd-dbb4ff001750" name="Default" comment="" />
     <ignored path="2015-06-subclass-dance-party.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,10 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dancefloor.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dancefloor.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dancefloor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.964285">
+            <state vertical-scroll-proportion="0.92412454">
               <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
               <folding />
             </state>
@@ -93,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7933579">
-              <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -263,9 +241,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27016646" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27016646" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -703,14 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dancefloor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.964285">
-          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/init.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -721,8 +691,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7933579">
-          <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dancefloor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.92412454">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
           <folding />
         </state>
       </provider>
