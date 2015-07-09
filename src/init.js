@@ -1,21 +1,6 @@
 $(document).ready(function(){
   window.dancers = [];
 
-  lineUp = function() {
-  var allNodes = $('.shia');
-  console.log(allNodes[0]);
-  var leftPosition = 0;
-  var width = $('body').width();
-  // for (var i = 0; i < allNodes.length; i++) {
-  //   var current = allNodes[i];
-  //   console.log(allNodes[i]);
-  //   current.css('left', leftPosition);
-  //   leftPosition += width / (allNodes.length);
-  
-  // }
-  allNodes.css({'top': '30%'});
-};
-
   $(".addDancerButton").on("click", function(event){
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
@@ -46,7 +31,26 @@ $(document).ready(function(){
   });
 
   $('.lineup').on('click', function(event) {
-   lineUp();    
+    var allNodes = $('.shia');
+    var leftPosition = -150;
+    var width = $('body').width() - 300;
+    var height = $('body').height() / 4;
+    var spaceBetweenEach = width / allNodes.length;
+    $('.shia').each(function(index, value) {
+      $(this).css({'left': leftPosition, 'top': height});
+      leftPosition += spaceBetweenEach;
+    });
+
+  });
+
+  $('.disperse').on('click', function(event) {
+    var allNodes = $('.shia');
+    var width = $('body').width() - 300;
+    $('.shia').each(function(index, value) {
+      var leftPosition =  $("body").width() * Math.random();
+      var topPosition =  $("body").height() * Math.random();
+      $(this).css({'left': leftPosition, 'top': topPosition});
+    });
   });
 });
 
