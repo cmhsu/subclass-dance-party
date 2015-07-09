@@ -2,16 +2,15 @@ $(document).ready(function(){
   window.dancers = [];
 
   lineUp = function() {
-  var allNodes = $('.shia');
+  var allNodes = $('.corgi, .shiba');
   console.log(allNodes[0]);
   var leftPosition = 0;
   var width = $('body').width();
-  // for (var i = 0; i < allNodes.length; i++) {
+  // allNode.each(function(){
   //   var current = allNodes[i];
   //   console.log(allNodes[i]);
   //   current.css('left', leftPosition);
   //   leftPosition += width / (allNodes.length);
-  
   // }
   allNodes.css({'top': '30%'});
 };
@@ -46,7 +45,7 @@ $(document).ready(function(){
   });
 
   $('.lineup').on('click', function(event) {
-   lineUp();    
+   lineUp();
   });
 });
 

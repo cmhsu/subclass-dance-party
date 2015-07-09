@@ -2,33 +2,67 @@ body, html{
   height:100%;
 }
 body{
-  margin: 0px;
+  margin: 0;
   background-color:#444;
   font-size: 18px;
-  background-image: url("images/background.gif");
-  background-size: 20%;
+  background-image: url("images/background.jpg");
+  background-size: cover; 
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
+
+
+.button {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+  color: #666666;
+  font: 0.8em 'Open Sans', sans-serif;
+  padding: 5px;
+  text-shadow: 0px 1px 0px #ffffff;
+  right: 0;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  background-color: #f6f6f6;
+}
+
+.button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
 .title, .addDancerButton, .lineup{
   padding:5px 12px;
   float:right;
 }
 .topbar{
-  height:32px;
+  height: 40px;
   background-color: #555;
 }
 .title{
-  background-color: #777;
-}
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
+  font: 2em 'Monofett', cursive;, 'Poiret One', cursive, Arial, sans-serif;
+  font-weight: bold;
+  color: #7dbaf7;
+  vertical-align: middle;
 }
 
-.shia {
+.corgi {
   position:absolute;
   display: block;
+}
+
+.shiba {
+  position:absolute;
+  display: block;
+}
+
+.size {
+  display: inline;
+  width: 200px;
 }
