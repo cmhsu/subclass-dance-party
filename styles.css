@@ -63,7 +63,17 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.size {
+.corgis {
   display: block;
   width: 200px;
+}
+
+.pugs {
+  display: block;
+  width: 200px;
+}
+
+.shibas {
+  display: block;
+  width: 170px;
 }

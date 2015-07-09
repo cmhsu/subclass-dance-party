@@ -4,7 +4,7 @@ var makeCorgiDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
 
   this.$node = $('<span class="corgi"></span>');
-  this.$node.html('<span class="front"><img class="size" src="images/corgiswim_right.gif"></span><span class="back"><img class="size" src="images/corgiswim_left.gif"></span>');
+  this.$node.html('<span class="front"><img class="corgis" src="images/corgiswim_right.gif"></span><span class="back"><img class="corgis" src="images/corgiswim_left.gif"></span>');
 
   this.setPosition(top, left);
   this.rotate();
