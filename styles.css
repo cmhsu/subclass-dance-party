@@ -13,7 +13,7 @@ body, a:link, a:visited, a:active{
 }
 
 
-.button {
+.addDancerButton, .lineup, .disperse {
   box-shadow: inset 0px 1px 0px 0px #ffffff;
   background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
   background-color: #ffffff;
@@ -37,7 +37,7 @@ body, a:link, a:visited, a:active{
   box-shadow: none;
 }
 
-.title, .addDancerButton, .lineup{
+.title, .addDancerButton, .lineup, .disperse{
   padding:5px 12px;
   float:right;
 }
@@ -46,23 +46,17 @@ body, a:link, a:visited, a:active{
   background-color: #555;
 }
 .title{
-  font: 2em 'Monofett', cursive;, 'Poiret One', cursive, Arial, sans-serif;
+  font: 2em 'Monofett', cursive, 'Poiret One', cursive, Arial, sans-serif;
   font-weight: bold;
   color: #7dbaf7;
   vertical-align: middle;
 }
 
-.corgi {
+.corgi, .shiba, .pug {
   position:absolute;
-  display: block;
-}
-
-.shiba {
-  position:absolute;
-  display: block;
 }
 
 .size {
-  display: inline;
+  display: block;
   width: 200px;
 }

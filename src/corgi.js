@@ -16,13 +16,10 @@ makeCorgiDancer.prototype = Object.create(makeDancer.prototype);
 
 makeCorgiDancer.prototype.rotate = function() {
   // / call the old version of step at the beginning of any call to this new version of step
-  this.$node.flip({
-    trigger: 'manual'
-  });
-  
-  this.$node.flip(true);
-  this.oldStep();
-  this.$node.flip(false);
+  // this.$node.flip({
+  //   trigger: 'manual'
+  // });
+  this.$node.flip();
 };
 
 makeCorgiDancer.prototype.constructor = makeCorgiDancer;
