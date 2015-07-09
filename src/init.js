@@ -29,9 +29,6 @@ $(document).ready(function(){
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
-    console.log(dancer);
-
-    var dancersPositions = [];
 
     var calculateDistance = function(dancer1, dancer2) {
       var dancer1Left = +dancer1.$node.css('left').replace(/[^-\d\.]/g, '');
@@ -40,15 +37,28 @@ $(document).ready(function(){
       var dancer2Left = +dancer2.$node.css('left').replace(/[^-\d\.]/g, '');
       var dancer2Top = +dancer2.$node.css('top').replace(/[^-\d\.]/g, '');
 
-      var distance = Math.sqrt((dancer1Left - dancer2Left)*(dancer1Left - dancer2Left) + (dancer1Top - dancer2Top)*(dancer1Top - dancer2Top));
+      var distance = +Math.sqrt((dancer1Left - dancer2Left)*(dancer1Left - dancer2Left) + (dancer1Top - dancer2Top)*(dancer1Top - dancer2Top));
       // for (var i = 0; i < dancers.length; i++) {
       //   var x = dancers[i].$node.css('left');
       //   var y = dancers[i].$node.css('top');
       // }
-      if (distance < 500) {
-        alert(distance);
+      
+      if (distance < 100) {
+        var scroll = function() {
+          console.log(dancer1.$node.css('top').replace(/[^-\d\.]/g, ''));
+          if (dancer1.$node.css('top').replace(/[^-\d\.]/g, '') > 100 || dancer2.$node.css('top').replace(/[^-\d\.]/g, '') > 100) {
+            dancer1.$node.animate({top: '-=40'}, 500, 'linear', function() {
+              dancer1.$node.animate({top: '+=40'}, 500, 'linear', function() {scroll()});
+            });
+            // dancer2.$node.animate({top: '-=40'}, 200, 'linear', function() {
+            //   dancer2.$node.animate({top: '+=40'}, 200, 'linear', function() {scroll()});
+            // });
+          }
+        };
+        scroll();
       } 
-    }
+    };
+
     for (var i = 0; i < dancers.length; i++) {
       var currentDancer = dancers[i];
       for (var j = 0; j < dancers.length; j++) {
@@ -65,12 +75,55 @@ $(document).ready(function(){
     var allNodes = $('.corgi, .shiba, .pug');
     var leftPosition = 50;
     var width = $('body').width()-200;
-    var height = $('body').height() / 3;
+    var height = screen.height-300;
     var spaceBetweenEach = width / allNodes.length;
+
+    allNodes.stop(true);
+    setTimeout(function(){}, 1000);
     allNodes.each(function() {
       $(this).css({'left': leftPosition, 'top': height});
       leftPosition += spaceBetweenEach;
+      
     });
+ 
+    // var calculateDistance = function(dancer1, dancer2) {
+    //   var dancer1Left = +dancer1.$node.css('left').replace(/[^-\d\.]/g, '');
+    //   var dancer1Top = +dancer1.$node.css('top').replace(/[^-\d\.]/g, '');
+
+    //   var dancer2Left = +dancer2.$node.css('left').replace(/[^-\d\.]/g, '');
+    //   var dancer2Top = +dancer2.$node.css('top').replace(/[^-\d\.]/g, '');
+
+    //   var distance = +Math.sqrt((dancer1Left - dancer2Left)*(dancer1Left - dancer2Left) + (dancer1Top - dancer2Top)*(dancer1Top - dancer2Top));
+    //   // for (var i = 0; i < dancers.length; i++) {
+    //   //   var x = dancers[i].$node.css('left');
+    //   //   var y = dancers[i].$node.css('top');
+    //   // }
+    //   console.log(dancer1);
+    //   console.log(dancer2);
+    //   if (distance < 200) {
+    //     var scroll = function() {
+    //       console.log(dancer1.$node.css('top').replace(/[^-\d\.]/g, ''));
+    //       if (dancer1.$node.css('top').replace(/[^-\d\.]/g, '') > 100 || dancer2.$node.css('top').replace(/[^-\d\.]/g, '') > 100) {
+    //         dancer1.$node.animate({top: '-=40'}, 200, 'linear', function() {
+    //           dancer1.$node.animate({top: '+=40'}, 200, 'linear', function() {scroll()});
+    //         });
+    //         dancer2.$node.animate({top: '-=40'}, 200, 'linear', function() {
+    //           dancer2.$node.animate({top: '+=40'}, 200, 'linear', function() {scroll()});
+    //         });
+    //       }
+    //     };
+    //     scroll();
+    //   } 
+    // };
+
+    // for (var i = 0; i < dancers.length; i++) {
+    //   var currentDancer = dancers[i];
+    //   for (var j = 0; j < dancers.length; j++) {
+    //     if (dancers[j] !== currentDancer) {
+    //       calculateDistance(currentDancer, dancers[j]);
+    //     }
+    //   }
+    // }  
   });
 
   $('.disperse').on('click', function(event) {
@@ -82,6 +135,46 @@ $(document).ready(function(){
       var topPosition =  height * Math.random();
       $(this).css({'left': leftPosition, 'top': topPosition});
     });
+
+
+    var calculateDistance = function(dancer1, dancer2) {
+      var dancer1Left = +dancer1.$node.css('left').replace(/[^-\d\.]/g, '');
+      var dancer1Top = +dancer1.$node.css('top').replace(/[^-\d\.]/g, '');
+
+      var dancer2Left = +dancer2.$node.css('left').replace(/[^-\d\.]/g, '');
+      var dancer2Top = +dancer2.$node.css('top').replace(/[^-\d\.]/g, '');
+
+      var distance = +Math.sqrt((dancer1Left - dancer2Left)*(dancer1Left - dancer2Left) + (dancer1Top - dancer2Top)*(dancer1Top - dancer2Top));
+      // for (var i = 0; i < dancers.length; i++) {
+      //   var x = dancers[i].$node.css('left');
+      //   var y = dancers[i].$node.css('top');
+      // }
+      console.log(dancer1);
+      console.log(dancer2);
+      if (distance < 200) {
+        var scroll = function() {
+          console.log(dancer1.$node.css('top').replace(/[^-\d\.]/g, ''));
+          if (dancer1.$node.css('top').replace(/[^-\d\.]/g, '') > 100 || dancer2.$node.css('top').replace(/[^-\d\.]/g, '') > 100) {
+            dancer1.$node.animate({top: '-=40'}, 200, 'linear', function() {
+              dancer1.$node.animate({top: '+=40'}, 200, 'linear', function() {scroll()});
+            });
+            dancer2.$node.animate({top: '-=40'}, 200, 'linear', function() {
+              dancer2.$node.animate({top: '+=40'}, 200, 'linear', function() {scroll()});
+            });
+          }
+        };
+        scroll();
+      } 
+    };
+
+    for (var i = 0; i < dancers.length; i++) {
+      var currentDancer = dancers[i];
+      for (var j = 0; j < dancers.length; j++) {
+        if (dancers[j] !== currentDancer) {
+          calculateDistance(currentDancer, dancers[j]);
+        }
+      }
+    }  
   });
 
   $('.corgi, .shiba, .pug').on('mouseover', function(event) {

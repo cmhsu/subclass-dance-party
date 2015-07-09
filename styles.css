@@ -51,6 +51,7 @@ body, a:link, a:visited, a:active{
 .topbar{
   height: 40px;
   background-color: #555;
+  z-index: 9999;
 }
 .title{
   font: 2em 'Monofett', cursive, 'Poiret One', cursive, Arial, sans-serif;
@@ -61,6 +62,7 @@ body, a:link, a:visited, a:active{
 
 .corgi, .shiba, .pug {
   position:absolute;
+  z-index: 1;
 }
 
 .corgis {
